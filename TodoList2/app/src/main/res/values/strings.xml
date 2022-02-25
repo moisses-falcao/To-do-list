@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">To do List</string>
+    <string name="nenhuma_tarefa_nadicionada">Nenhuma tarefa\nadicionada...</string>
+    <string name="clique_aqui_para_nadiciona_uma_tarefa">Clique aqui para \nadiciona uma tarefa</string>
+    <string name="tarefas">Tarefas</string>
+    <string name="criarnovatarefa">CriarNovaTarefa</string>
+    <string name="t_tulo_da_tarefa">Título da Tarefa</string>
+    <string name="data_e_hora_da_tarefa">Data e Hora da Tarefa</string>
+    <string name="visualizar_descri_o">Visualizar descrição...</string>
+    <string name="atualizar_tarefa">Atualizar tarefa</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="criar_tarefa">Criar Tarefa</string>
+    <string name="descri_o_da_tarefa">Descrição da Tarefa...</string>
+    <string name="hora_da_tarefa">Hora da Tarefa</string>
+    <string name="data_da_tarefa">Data da Tarefa</string>
+    <string name="author_name">By Moissés Falcão</string>
+    <string name="lista_de_tarefas">Lista de Tarefas</string>
+</resources>

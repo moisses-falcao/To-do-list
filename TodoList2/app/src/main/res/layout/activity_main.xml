@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="@color/grey"
+    >
+
+    <ImageView
+        android:id="@+id/iv_balaodefala"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:src="@drawable/balaodefala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_nenhumaTarefaCriada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nenhuma_tarefa_nadicionada"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="30dp"
+         />
+
+    <pl.droidsonroids.gif.GifImageView
+       android:id="@+id/gv_pandinha"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:src="@drawable/pandinha"
+       />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gv_pandinhajogando"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/panda"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gv_arrow"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:src="@drawable/arrow"
+        android:rotation="-90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="260dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="700dp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_floatActionButton"
+        />
+
+    <TextView
+        android:id="@+id/tv_cliqueaqui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clique_aqui_para_nadiciona_uma_tarefa"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="115dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarefas"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_listRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:itemCount="5"
+        tools:listitem="@layout/task_model"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tasks"
+        app:layout_constraintBottom_toTopOf="@id/bt_floatActionButton"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bt_floatActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add"
+        android:contentDescription="@string/criarnovatarefa"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
