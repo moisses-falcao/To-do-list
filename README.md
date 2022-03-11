@@ -7,6 +7,6 @@ Nele é possível, criar, excluir e visualizar tarefas que ficam salvas em seu s
 
 <div align="left">
   
-    <img height="180em" src="https://user-images.githubusercontent.com/95506261/157913670-9249cd8d-de62-414b-ac33-2b750481840a.mp4"/>
+    <img height="180em" src="https://user-images.githubusercontent.com/95506261/157913767-7074abb4-8d57-467e-b515-64c599b47e1d.gif"/>
 
 </div>
